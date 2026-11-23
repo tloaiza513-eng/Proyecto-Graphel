@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: #f3f3f3;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 1000px;
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+
+header {
+  background: #23282d;
+  border-bottom: 5px solid #1494d6;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 89px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #1494d6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 37px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #1494d6;
+}
+
+nav ul li a.activo {
+  font-weight: bold;
+}
+
+
+.hero {
+  height: 376px;
+  background: linear-gradient(rgba(35, 40, 45, 0.3), rgba(35, 40, 45, 0.3)),
+              url("assets/cabecera.jpg") center 40% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 80px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 21px;
+  max-width: 920px;
+}
+
+
+.newsletter {
+  background: #23282d;
+  height: 88px;
+}
+
+.newsletter .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.newsletter h2 {
+  color: #fff;
+  font-size: 22px;
+}
+
+.newsletter form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input[type="email"],
+.newsletter input[type="text"] {
+  width: 245px;
+  height: 32px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.newsletter input[type="submit"] {
+  height: 36px;
+  padding: 0 18px;
+  margin-left: 5px;
+  background: #e8491d;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background: #c93b14;
+}
+
+
+.servicios-inicio {
+  background: #f3f3f3;
+  padding: 28px 0 40px;
+}
+
+.servicios-inicio .contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.servicios-inicio article {
+  width: 288px;
+  margin: 0 17px;
+  text-align: center;
+}
+
+.servicios-inicio img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 8px;
+}
+
+.servicios-inicio h3 {
+  font-size: 16px;
+  margin-bottom: 21px;
+}
+
+.servicios-inicio p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+.principal {
+  padding: 20px 0 20px;
+}
+
+.principal .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.principal main {
+  width: 66%;
+}
+
+.principal aside {
+  width: 31%;
+}
+
+main h2 {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+main p {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 14px;
+}
+
+.destacado {
+  background: #36424a;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.destacado p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.imagen-nosotros {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.caja-lateral {
+  background: #36424a;
+  color: #fff;
+  padding: 30px 15px 25px;
+}
+
+.caja-lateral h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.caja-lateral p {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.mapa {
+  display: block;
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+
+.servicio {
+  background: #e5e5e5;
+  border: 1px solid #ccc;
+  padding: 30px 20px 25px;
+  margin-bottom: 4px;
+}
+
+.servicio h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.servicio p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 14px;
+}
+
+.servicio p:last-child {
+  margin-bottom: 0;
+}
+
+
+.formulario label {
+  display: block;
+  font-size: 14px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid #888;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.formulario textarea {
+  height: 126px;
+  resize: vertical;
+}
+
+.formulario input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 11px;
+  background: #e8491d;
+  color: #fff;
+  border: 1px solid #999;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background: #c93b14;
+}
+
+
+footer {
+  background: #1494d6;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 35px 0 31px;
+}
